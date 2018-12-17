@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
-RUN apt update && apt install texlive-latex-recommended texlive-fonts-extra vim -y
+FROM ubuntu:18.10
+RUN apt update && apt install -y texlive-latex-recommended texlive-fonts-extra vim
 RUN mkdir /input /output
 WORKDIR /output
 ADD pdf.sh pdf.sh
