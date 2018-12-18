@@ -1,5 +1,5 @@
 #!/bin/bash
-cp /input/*.tex .
+cp -r /input/* .
 for file in *.tex
 do
 	echo === RUN: pdflatex "$file" ===
