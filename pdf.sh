@@ -1,6 +1,11 @@
 #!/bin/bash
 cp /input/*.tex .
-for file in *.tex
+files=*.tex
+if [ ! -z "$1" ]
+then
+	files="$1"
+fi
+for file in $files
 do
 	echo === RUN: pdflatex "$file" ===
 	pdflatex "$file"
