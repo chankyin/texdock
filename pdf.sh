@@ -1,5 +1,5 @@
 #!/bin/bash
-cp /input/*.tex .
+cp -r /input/* .
 files=*.tex
 if [ ! -z "$1" ]
 then
